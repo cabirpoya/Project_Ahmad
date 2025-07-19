@@ -1,0 +1,2 @@
+mkdir .github\workflows
+notepad .github\workflows\firebase-hosting.yml

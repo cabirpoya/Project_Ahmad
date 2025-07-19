@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مجموعه اشعار احمد ظاهر</title>
+    <meta name="description" content="مجموعه کامل اشعار خوانده شده توسط احمد ظاهر - گنجینه شعر افغانستان" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Content Protection -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:;">
+    
+    <style>
+      /* Disable text selection globally */
+      * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Allow selection only for input fields */
+      input, textarea {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+      }
+      
+      /* Disable drag and drop */
+      img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #2D5A3D;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1F3D2A;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Content Protection Scripts -->
+    <script>
+      // Disable right-click context menu
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+      });
+      
+      // Disable F12, Ctrl+Shift+I, Ctrl+U, Ctrl+S, Ctrl+A, Ctrl+C, Ctrl+V
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12' || 
+            (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+            (e.ctrlKey && e.key === 'u') ||
+            (e.ctrlKey && e.key === 's') ||
+            (e.ctrlKey && e.key === 'a') ||
+            (e.ctrlKey && e.key === 'c') ||
+            (e.ctrlKey && e.key === 'v') ||
+            (e.ctrlKey && e.key === 'x')) {
+          e.preventDefault();
+          return false;
+        }
+      });
+      
+      // Disable drag and drop
+      document.addEventListener('dragstart', function(e) {
+        e.preventDefault();
+        return false;
+      });
+      
+      // Disable print screen
+      document.addEventListener('keyup', function(e) {
+        if (e.key === 'PrintScreen') {
+          navigator.clipboard.writeText('');
+        }
+      });
+      
+      // Blur content when dev tools might be open
+      let devtools = {open: false, orientation: null};
+      setInterval(function() {
+        if (window.outerHeight - window.innerHeight > 160) {
+          devtools.open = true;
+          document.body.style.filter = 'blur(5px)';
+        } else {
+          devtools.open = false;
+          document.body.style.filter = 'none';
+        }
+      }, 500);
+    </script>
+  </body>
+</html>
